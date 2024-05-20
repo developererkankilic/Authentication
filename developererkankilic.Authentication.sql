@@ -1,0 +1,82 @@
+CREATE DATABASE AuthenticationSchema;
+USE AuthenticationSchema;
+
+CREATE TABLE Gender
+(
+	GenderId TINYINT IDENTITY PRIMARY KEY,
+	GenderName VARCHAR(10) UNIQUE NOT NULL,
+);
+
+
+CREATE TABLE Users
+(
+	UserId BIGINT IDENTITY PRIMARY KEY,
+	GenderId TINYINT FOREIGN KEY REFERENCES Gender(GenderId),
+	Email NVARCHAR(200) UNIQUE NOT NULL,
+	PhoneNumber VARCHAR(20) UNIQUE NOT NULL,
+	FirstName NVARCHAR(50) NOT NULL,
+	LastName NVARCHAR(50) NOT NULL,
+	BirthDate DATE NOT NULL,
+	ProfilePicture VARBINARY(MAX),
+	PasswordHash BINARY(128) NOT NULL,
+	PasswordSalt VARCHAR(255) NOT NULL,
+	IsActiveAccount BIT NOT NULL,
+);
+
+CREATE TABLE ProviderType
+(
+	ProviderTypeId TINYINT IDENTITY PRIMARY KEY,
+	ProviderTypeName VARCHAR(50) UNIQUE NOT NULL
+);
+
+CREATE TABLE ExternalProviders (
+    ProviderId BIGINT IDENTITY PRIMARY KEY,
+	ProviderTypeId TINYINT FOREIGN KEY REFERENCES ProviderType(ProviderTypeId) NOT NULL,
+    UserId BIGINT FOREIGN KEY REFERENCES Users(UserId),
+    ExternalUserID NVARCHAR(100) NOT NULL,
+);
+
+CREATE TABLE TwoFactorAuthMethodType
+(
+	TwoFactorAuthMethodTypeId TINYINT IDENTITY PRIMARY KEY,
+	TwoFactorAuthMethodTypeName VARCHAR(50) UNIQUE NOT NULL
+);
+
+CREATE TABLE TwoFactorAuth (
+    TwoFactorAuthId BIGINT IDENTITY PRIMARY KEY,
+    UserId BIGINT FOREIGN KEY REFERENCES Users(UserId),
+    TwoFactorAuthMethodTypeId TINYINT FOREIGN KEY REFERENCES TwoFactorAuthMethodType(TwoFactorAuthMethodTypeId) NOT NULL,
+    TwoFactorAuthKey NVARCHAR(MAX) NOT NULL,
+    IsActive BIT NOT NULL,
+    CreatedAt DATETIME NOT NULL,
+    UpdatedAt DATETIME NULL
+);
+
+CREATE TABLE OAuthClients
+(
+    ClientId BIGINT IDENTITY PRIMARY KEY,
+    UserId BIGINT FOREIGN KEY REFERENCES Users(UserId),
+    ClientName NVARCHAR(100) NOT NULL,
+    ClientSecret NVARCHAR(255) NOT NULL,
+    RedirectUri NVARCHAR(255) NOT NULL,
+    GrantType NVARCHAR(50) NOT NULL,
+);
+
+CREATE TABLE OAuthAuthorizationCodes
+(
+    CodeId INT IDENTITY PRIMARY KEY,
+    ClientId BIGINT FOREIGN KEY REFERENCES OAuthClients(ClientId),
+    UserId BIGINT FOREIGN KEY REFERENCES Users(UserId),
+    AuthorizationCode NVARCHAR(255) NOT NULL,
+    ExpiresAt DATETIME NOT NULL
+);
+
+CREATE TABLE OAuthAccessTokens
+(
+    TokenId INT IDENTITY PRIMARY KEY,
+    AccessToken NVARCHAR(255) NOT NULL,
+    RefreshToken NVARCHAR(255) NOT NULL,
+    ClientId BIGINT FOREIGN KEY REFERENCES OAuthClients(ClientId),
+    UserId BIGINT FOREIGN KEY REFERENCES Users(UserId),
+    ExpiresAt DATETIME NOT NULL
+);
