@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "developererkankilic.Authentication.Contracts", "developererkankilic.Authentication.Contracts\developererkankilic.Authentication.Contracts.csproj", "{9DAA9710-E841-4932-88B1-63C4BE6B077A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "developererkankilic.Authentication.Application", "developererkankilic.Authentication.Application\developererkankilic.Authentication.Application.csproj", "{994A71A5-81E6-49DF-A728-095AA0AD6589}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "developererkankilic.Authentication.WebAPI", "developererkankilic.Authentication.WebAPI\developererkankilic.Authentication.WebAPI.csproj", "{77F10155-F8E9-4AD6-95D1-7A09EF6F8EA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "developererkankilic.Authentication.Test", "developererkankilic.Authentication.Test\developererkankilic.Authentication.Test.csproj", "{FBF77958-A716-4890-B85B-B2A9AF61B727}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "developererkankilic.Authentication.Repository", "developererkankilic.Authentication.Repository\developererkankilic.Authentication.Repository.csproj", "{EB7EF28A-6390-4AF0-BE63-FF7A8755961C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "developererkankilic.Authentication.Constants", "developererkankilic.Authentication.Constants\developererkankilic.Authentication.Constants.csproj", "{1B628E04-431B-48D1-8036-8D1F7D8FFFFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "developererkankilic.Authentication.Logging", "developererkankilic.Authentication.Logging\developererkankilic.Authentication.Logging.csproj", "{8ED0FFF0-CB0A-435F-8E74-AB19EF392DB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "developererkankilic.Authentication.Exception", "developererkankilic.Authentication.Exception\developererkankilic.Authentication.Exception.csproj", "{13269BFC-AA69-46D7-903F-68EA2258D24F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DAA9710-E841-4932-88B1-63C4BE6B077A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DAA9710-E841-4932-88B1-63C4BE6B077A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DAA9710-E841-4932-88B1-63C4BE6B077A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DAA9710-E841-4932-88B1-63C4BE6B077A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{994A71A5-81E6-49DF-A728-095AA0AD6589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{994A71A5-81E6-49DF-A728-095AA0AD6589}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{994A71A5-81E6-49DF-A728-095AA0AD6589}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{994A71A5-81E6-49DF-A728-095AA0AD6589}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77F10155-F8E9-4AD6-95D1-7A09EF6F8EA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77F10155-F8E9-4AD6-95D1-7A09EF6F8EA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77F10155-F8E9-4AD6-95D1-7A09EF6F8EA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77F10155-F8E9-4AD6-95D1-7A09EF6F8EA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBF77958-A716-4890-B85B-B2A9AF61B727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBF77958-A716-4890-B85B-B2A9AF61B727}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBF77958-A716-4890-B85B-B2A9AF61B727}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBF77958-A716-4890-B85B-B2A9AF61B727}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB7EF28A-6390-4AF0-BE63-FF7A8755961C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB7EF28A-6390-4AF0-BE63-FF7A8755961C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB7EF28A-6390-4AF0-BE63-FF7A8755961C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB7EF28A-6390-4AF0-BE63-FF7A8755961C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B628E04-431B-48D1-8036-8D1F7D8FFFFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B628E04-431B-48D1-8036-8D1F7D8FFFFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B628E04-431B-48D1-8036-8D1F7D8FFFFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B628E04-431B-48D1-8036-8D1F7D8FFFFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ED0FFF0-CB0A-435F-8E74-AB19EF392DB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ED0FFF0-CB0A-435F-8E74-AB19EF392DB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ED0FFF0-CB0A-435F-8E74-AB19EF392DB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ED0FFF0-CB0A-435F-8E74-AB19EF392DB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13269BFC-AA69-46D7-903F-68EA2258D24F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13269BFC-AA69-46D7-903F-68EA2258D24F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13269BFC-AA69-46D7-903F-68EA2258D24F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13269BFC-AA69-46D7-903F-68EA2258D24F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6393E1D6-7D80-4C33-B770-8A69DB469023}
+	EndGlobalSection
+EndGlobal
