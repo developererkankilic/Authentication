@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAuth 2.0 Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>OAuth 2.0 Test</h2>
+        <p>API'ye erişmek için OAuth 2.0 kimlik doğrulaması yapın:</p>
+        <a href="#" class="btn" id="loginBtn">Login with Google</a>
+    </div>
+
+    <script>
+        document.getElementById('loginBtn').addEventListener('click', function(event) {
+            event.preventDefault();
+            // OAuth 2.0 kimlik doğrulaması yapmak için API'ye yönlendirme yap
+            window.location.href = 'https://localhost:7172/login';
+        });
+    </script>
+</body>
+</html>

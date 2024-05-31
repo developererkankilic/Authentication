@@ -3,21 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "developererkankilic.Authentication.Contracts", "developererkankilic.Authentication.Contracts\developererkankilic.Authentication.Contracts.csproj", "{9DAA9710-E841-4932-88B1-63C4BE6B077A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "developererkankilic.Authentication.Contracts", "developererkankilic.Authentication.Contracts\developererkankilic.Authentication.Contracts.csproj", "{9DAA9710-E841-4932-88B1-63C4BE6B077A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "developererkankilic.Authentication.Application", "developererkankilic.Authentication.Application\developererkankilic.Authentication.Application.csproj", "{994A71A5-81E6-49DF-A728-095AA0AD6589}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "developererkankilic.Authentication.Application", "developererkankilic.Authentication.Application\developererkankilic.Authentication.Application.csproj", "{994A71A5-81E6-49DF-A728-095AA0AD6589}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "developererkankilic.Authentication.WebAPI", "developererkankilic.Authentication.WebAPI\developererkankilic.Authentication.WebAPI.csproj", "{77F10155-F8E9-4AD6-95D1-7A09EF6F8EA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "developererkankilic.Authentication.WebAPI", "developererkankilic.Authentication.WebAPI\developererkankilic.Authentication.WebAPI.csproj", "{77F10155-F8E9-4AD6-95D1-7A09EF6F8EA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "developererkankilic.Authentication.Test", "developererkankilic.Authentication.Test\developererkankilic.Authentication.Test.csproj", "{FBF77958-A716-4890-B85B-B2A9AF61B727}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "developererkankilic.Authentication.Test", "developererkankilic.Authentication.Test\developererkankilic.Authentication.Test.csproj", "{FBF77958-A716-4890-B85B-B2A9AF61B727}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "developererkankilic.Authentication.Repository", "developererkankilic.Authentication.Repository\developererkankilic.Authentication.Repository.csproj", "{EB7EF28A-6390-4AF0-BE63-FF7A8755961C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "developererkankilic.Authentication.Repository", "developererkankilic.Authentication.Repository\developererkankilic.Authentication.Repository.csproj", "{EB7EF28A-6390-4AF0-BE63-FF7A8755961C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "developererkankilic.Authentication.Constants", "developererkankilic.Authentication.Constants\developererkankilic.Authentication.Constants.csproj", "{1B628E04-431B-48D1-8036-8D1F7D8FFFFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "developererkankilic.Authentication.Constants", "developererkankilic.Authentication.Constants\developererkankilic.Authentication.Constants.csproj", "{1B628E04-431B-48D1-8036-8D1F7D8FFFFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "developererkankilic.Authentication.Logging", "developererkankilic.Authentication.Logging\developererkankilic.Authentication.Logging.csproj", "{8ED0FFF0-CB0A-435F-8E74-AB19EF392DB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "developererkankilic.Authentication.Logging", "developererkankilic.Authentication.Logging\developererkankilic.Authentication.Logging.csproj", "{8ED0FFF0-CB0A-435F-8E74-AB19EF392DB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "developererkankilic.Authentication.Exception", "developererkankilic.Authentication.Exception\developererkankilic.Authentication.Exception.csproj", "{13269BFC-AA69-46D7-903F-68EA2258D24F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "developererkankilic.Authentication.Exception", "developererkankilic.Authentication.Exception\developererkankilic.Authentication.Exception.csproj", "{13269BFC-AA69-46D7-903F-68EA2258D24F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
